@@ -16,7 +16,7 @@ function LinkPurpose() {
     for(var d=0;d<anchorTags.length;d++){
         if(anchorTags[d].href != null && anchorTags[d].href != "" && anchorTags[d].innerText != "" && anchorTags[d].innerText != null)
         {
-            console.log("[Known Problem] Violation 2.4.4! ")
+            console.log("[Known Problem] Violation 2.4.4! Anchor contains no text")
         }
     }
     
