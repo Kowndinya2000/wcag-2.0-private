@@ -7,7 +7,7 @@
     "permissions": ["alarms", "webRequest", "webRequestBlocking", "activeTab", "tabs","https://services.iittp.ac.in/gitq"],
     "content_scripts":[{
         "matches" : ["https://*/*","http://*/*"],
-        "js":["jquery-3.6.0.js","HeadingsAndLabels_2_4_6(AA).js"],
+        "js":["jquery-3.6.0.js","LabelsOrInstructions_3_3_2(A).js"],
         "all_frames":true
     }],
     
