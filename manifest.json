@@ -1,13 +1,13 @@
 {
-    "name": "WCAG2.2",
-    "version": "3.0",
+    "name": "WCAG2.0",
+    "version": "2.0",
     "description":"Web Accessibility Guidelines",
     "minimum_chrome_version": "46",
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "permissions": ["alarms", "webRequest", "webRequestBlocking", "activeTab", "tabs","https://services.iittp.ac.in/gitq"],
     "content_scripts":[{
         "matches" : ["https://*/*"],
-        "js":["jquery-3.6.0.js","AccessibleAuthentication.js","RedundantEntry.js","Dragging.js","FindableHelp.js","HiddenControls.js","FocusAppearanceMinimum.js","FocusAppearanceEnhanced.js","FixedReferencePoints.js","PointerTargetSpacing.js"],
+        "js":["jquery-3.6.0.js","NonTextContent_1_1_1.js"],
         "all_frames":true
     }],
     
