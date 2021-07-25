@@ -1,5 +1,5 @@
 {
-    "name": "WCAG2.0&2.2",
+    "name": "WCAG2.0",
     "version": "2.0",
     "description": "Web Accessibility Guidelines",
     "minimum_chrome_version": "46",
