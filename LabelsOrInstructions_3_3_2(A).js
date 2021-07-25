@@ -1,11 +1,11 @@
 // Requirement
-    // Each label associated with an input element contains text.
+// Each label associated with an input element contains text.
 // Error
-    // Label text is empty.
+// Label text is empty.
 // Short Description
-    // Label must contain some text.
+// Label must contain some text.
 // How To Repair
-    // Add text to the label element.
+// Add text to the label element.
 
 setTimeout(() => {
     LabelsOrInstructions()
@@ -13,25 +13,31 @@ setTimeout(() => {
 
 function LabelsOrInstructions() {
     var inputTags = document.querySelectorAll('input')
-    for(var d=0;d<inputTags.length;d++){
+    for (var d = 0; d < inputTags.length; d++) {
         var testCasePass = false
         var labelTags = document.querySelectorAll('input');
-        for (var x=0;x<labelTags.length;x++){
-            if(labelTags[x].htmlFor == inputTags[d].id){
+        for (var x = 0; x < labelTags.length; x++) {
+            if (labelTags[x].htmlFor == inputTags[d].id) {
                 // console.log(inputTags[d].outerHTML)
                 // console.log(labelTags[x].outerHTML) 
-                if(labelTags[x].innerText != null && labelTags[x].innerText != ""){
+                if (labelTags[x].innerText != null && labelTags[x].innerText != "") {
                     testCasePass = true
-                    break 
-                } 
-            }
-            if(testCasePass == false){
-                    console.log("[Known Problem] Violation 3.3.2! Label text is empty")  
-                    // console.log(inputTags[d].outerHTML) 
+                    break
                 }
+            }
+            if (testCasePass == false) {
+
+                console.log("-----------------------------------------")
+                console.log("Rule: WCAG 3.3.2 (2.0,A)")
+                //console.log("[Known Problem] Violation 3.3.2! Label text is empty")  
+                console.log("Error: Label text is empty")
+                console.log("Code Snippet: ", inputTags[d].outerHTML)
+                console.log("Fix: Add text to the label element")
+            }
+        }
+
     }
-            
-    }
-    
+
+
 }
 
